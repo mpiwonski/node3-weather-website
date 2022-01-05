@@ -64,7 +64,7 @@ app.get("/weather", (req, res) => {
         } else {
           return res.send({
             location,
-            temperature: currentWeather.temperature,
+            currentWeather,
           });
         }
       });
